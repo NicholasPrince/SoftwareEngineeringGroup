@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 5904px;
+    height: 2629px;
+    gap: 368px;
+  }
+  
+  .pick-your-path {
+    width: 1200px;
+    height: 2177px;
+    background-color: white;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 32px;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid #D9D9D9;
+  }
+  
+  .block .figma .icon {
+    width: 23.33px;
+    height: 35px;
+    border: 3.5px solid #1E1E1E;
+  }
+  
+  .navigation-pill-list {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .navigation-pill {
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #1E1E1E;
+    cursor: pointer;
+  }
+  
+  .navigation-pill.active {
+    background-color: #F5F5F5;
+  }
+  
+  .header-auth {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .button {
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button.light {
+    background-color: #E3E3E3;
+    color: #1E1E1E;
+    border: 1px solid #767676;
+  }
+  
+  .button.dark {
+    background-color: #2C2C2C;
+    color: #F5F5F5;
+    border: 1px solid #2C2C2C;
+  }
+  
+  .hero-basic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 64px;
+    background-color: #F5F5F5;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 72px;
+    font-weight: 700;
+    color: #1E1E1E;
+  }
+  
+  .subtitle {
+    font-size: 32px;
+    color: #757575;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .card {
+    width: 480px;
+    padding: 24px;
+    background-color: white;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 16px;
+  }
+  
+  .choose-button {
+    padding: 12px;
+    background-color: #2C2C2C;
+    color: #F5F5F5;
+    border-radius: 8px;
+    border: 1px solid #2C2C2C;
+    cursor: pointer;
+  }
+  
+#footer
+.footer {
+  background-color: #2C2C2C;
+  color: #F5F5F5;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #F5F5F5;
+}
+
+.footer-nav, .footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-nav a, .footer-social a {
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+.footer-nav a:hover, .footer-social a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #757575;
+}
