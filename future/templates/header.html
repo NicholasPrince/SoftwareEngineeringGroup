@@ -1,0 +1,34 @@
+<header class="header">
+    <div class="block">
+        <div class="figma">
+            <div class="icon"></div>
+        </div>
+    </div>
+    <nav class="navigation-pill-list">
+        <a href="{% url 'home' %}" class="navigation-pill {% if request.path == '/' %}active{% endif %}">Home</a>
+        <a href="{% url 'view_path' %}" class="navigation-pill {% if request.path == '/path/' %}active{% endif %}">View Path</a>
+        <a href="{% url 'progress' %}" class="navigation-pill {% if request.path == '/progress/' %}active{% endif %}">Progress</a>
+    </nav>
+    <div class="header-auth">
+        <a href="{% url 'login' %}" class="button light">Sign in</a>
+        <a href="{% url 'register' %}" class="button dark">Register</a>
+    </div>
+    
+  </header>
+  <header class="header">
+    <div class="block">
+        <div class="figma">
+            <div class="icon"></div>
+        </div>
+    </div>
+    <nav class="navigation-pill-list">
+        <a href="{% url 'home' %}" class="navigation-pill {% if request.path == '/' %}active{% endif %}">Paths</a>
+        <a href="{% url 'progress' %}" class="navigation-pill {% if request.path == '/progress/' %}active{% endif %}">Progress</a>
+        <a href="{% url 'view_path' %}" class="navigation-pill {% if request.path == '/path/' %}active{% endif %}">Explore</a>
+    </nav>
+    <div class="header-auth">
+        <a href="{% url 'login' %}" class="button light">Sign in</a>
+        <a href="{% url 'register' %}" class="button dark">Register</a>
+    </div>
+  </header>
+    
