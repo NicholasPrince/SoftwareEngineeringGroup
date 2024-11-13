@@ -1,21 +1,16 @@
 from django.shortcuts import render
 
 def main_content_view(request):
-    # Landing page (Pick Your Path page)
-    return render(request, 'home.html')
+    return render(request, 'home.html')  # Landing page
 
 def view_path_view(request):
-    # Page to view the chosen path (e.g., Game Development)
-    return render(request, 'view_path.html')
+    return render(request, 'view_path.html')  # View path details
 
 def progress_view(request):
-    # Progress tracking page
-    return render(request, 'progress.html')
+    return render(request, 'progress.html')  # Progress page
 
 def login_view(request):
-    # Login page
-    return render(request, 'login.html')
+    return render(request, 'login.html')  # Login page
 
 def register_view(request):
-    # Register page
-    return render(request, 'register.html')
+    return render(request, 'register.html')  # Register page
