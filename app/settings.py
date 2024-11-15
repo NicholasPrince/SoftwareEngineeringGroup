@@ -38,12 +38,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'app.urls'  # Assuming 'app' is the main project directory
+ROOT_URLCONF = 'app.urls' 
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'future' / 'templates'],  # Corrected to use Path
+        'DIRS': [BASE_DIR / 'future' / 'templates'],  
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -56,7 +56,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'app.wsgi.application'  # Assuming 'app' is the main project directory
+WSGI_APPLICATION = 'app.wsgi.application'  
 
 
 # Database
@@ -109,7 +109,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'future' / 'static',  # Correct path to static files
 ]
-
+STATIC_ROOT = BASE_DIR / 'future' / 'staticfiles' 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
