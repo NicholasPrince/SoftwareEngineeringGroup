@@ -1,23 +1,24 @@
 {% extends "base.html" %}
+{% block title %}Progress{% endblock title %}
 
 {% block content %}
-    <h1>Progress</h1>
-    <p>Track your progress in Game Development.</p>
+<h1>Progress</h1>
+<p>Track your progress in Game Development.</p>
 
-    <!-- Basic Progress Overview -->
-    <div>
-        <p>Overall Progress: 50%</p> <!-- Placeholder percentage -->
-        <div style="background-color: #e0e0e0; width: 100%; height: 20px;">
-            <div style="background-color: #4caf50; width: 50%; height: 100%;"></div> <!-- 50% filled as an example -->
-        </div>
+<!-- Basic Progress Overview -->
+<div>
+    <p>Overall Progress: 50%</p>
+    <div style="background-color: #e0e0e0; width: 100%; height: 20px;">
+        <div style="background-color: #4caf50; width: 50%; height: 100%;"></div>
     </div>
+</div>
 
-    <div>
-        <p>Modules:</p>
-        <ul>
-            <li>Prep Video - Completed</li>
-            <li>Resource Guide - In Progress</li>
-            <li>Project Assignment - Not Started</li>
-        </ul>
-    </div>
+<div>
+    <p>Modules:</p>
+    <ul>
+        <li>Prep Video - Completed</li>
+        <li>Resource Guide - In Progress</li>
+        <li>Project Assignment - Not Started</li>
+    </ul>
+</div>
 {% endblock content %}
