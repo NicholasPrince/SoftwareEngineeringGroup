@@ -25,8 +25,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'future',  # Register the app here
+    'future.apps.BaseConfig',  # Register the app here
 ]
+
+AUTH_USER_MODEL = 'future.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -38,12 +40,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'app.urls' 
+ROOT_URLCONF = 'app.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'future' / 'templates'],  
+        'DIRS': [BASE_DIR / 'future' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -56,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'app.wsgi.application'  
+WSGI_APPLICATION = 'app.wsgi.application'
 
 
 # Database
@@ -109,7 +111,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'future' / 'static',  # Correct path to static files
 ]
-STATIC_ROOT = BASE_DIR / 'future' / 'staticfiles' 
+STATIC_ROOT = BASE_DIR / 'future' / 'staticfiles'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 

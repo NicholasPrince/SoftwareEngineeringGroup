@@ -7,4 +7,5 @@ urlpatterns = [
     path('progress/', views.progress_view, name='progress'),  # Progress page
     path('login/', views.login_view, name='login'),           # Login page
     path('register/', views.register_view, name='register'),  # Register page
+    path('logout/', views.logoutUser, name='logout'),         # Logout function
 ]
