@@ -28,7 +28,14 @@
 		{% include 'header.html' %}
 
 		<!-- Main Content -->
-		<main class="hero-basic">{% block content %} {% endblock content %}</main>
+		<main>
+			<ul class="messages">
+				{% for message in messages %}
+				<li>{{ message }}</li>
+				{% endfor %}
+			</ul>
+			{% block content %} {% endblock content %}
+		</main>
 
 		<!-- Dynamically load the footer -->
 		{% include 'footer.html' %}
