@@ -8,4 +8,6 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),           # Login page
     path('register/', views.register_view, name='register'),  # Register page
     path('logout/', views.logoutUser, name='logout'),         # Logout function
+    
+    path('content/<str:content_type>/', views.dynamic_content_view, name='dynamic_content'),
 ]
