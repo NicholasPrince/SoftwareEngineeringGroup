@@ -23,7 +23,8 @@
                 <p class="description">
                     Bring interactive worlds to life. Learn the essentials of designing, coding, and building games.
                 </p>
-                <a href="{% url 'view_path' %}" class="button dark">Pick this path!</a>
+                <!-- Pass the path_id for Game Development (e.g., 1) -->
+                <a href="{% url 'view_path' %}?path_id=1" class="button dark">Pick this path!</a>
             </div>
             
             <!-- Cybersecurity -->
