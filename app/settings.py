@@ -25,8 +25,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'future.apps.BaseConfig',  # Register the app here
+    'future.apps.FutureConfig',  # Updated name
 ]
+
 
 AUTH_USER_MODEL = 'future.User'
 
