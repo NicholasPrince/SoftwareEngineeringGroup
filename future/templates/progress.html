@@ -1,5 +1,8 @@
 {% extends "base.html" %}
-{% block title %}Progress{% endblock title %}
+
+{% block title %}
+Progress
+{% endblock title %}
 
 {% block content %}
 <section class="hero-basic">
@@ -9,18 +12,30 @@
 
 <!-- Basic Progress Overview -->
 <div>
-    <p>Overall Progress: 50%</p>
-    <div style="background-color: #e0e0e0; width: 100%; height: 20px;" class="progress-bar-container">
-        <div style="background-color: #4caf50; width: 50%; height: 100%;" class="progress-bar"></div>
-    </div>
+    <p>Overall Progress: {{ progress }}</p>
+    {% if user %}
+        <div class="progress-circle filled">
+            <span>{{ progress }}</span>
+        </div>
+    {% else %}
+        <div class="progress-circle zero">
+            <span>{{ progress }}</span>
+        </div>
+    {% endif %}
 </div>
 
 <div>
     <p>Modules:</p>
-    <ul>
-        <li>Prep Video - Completed</li>
-        <li>Resource Guide - In Progress</li>
-        <li>Project Assignment - Not Started</li>
+    <ul class="cards">
+        <li class="card">
+            Prep Video - {% if user %}Completed{% else %}Not Started{% endif %}
+        </li>
+        <li class="card">
+            Resource Guide - {% if user %}In Progress{% else %}Not Started{% endif %}
+        </li>
+        <li class="card">
+            Project Assignment - Not Started
+        </li>
     </ul>
 </div>
 {% endblock content %}
