@@ -12,16 +12,10 @@ Progress
 
 <!-- Basic Progress Overview -->
 <div>
-    <p>Overall Progress: {{ progress }}</p>
-    {% if user %}
-        <div class="progress-circle filled">
-            <span>{{ progress }}</span>
+    <p>Overall Progress: {{ progress }}%</p>
+        <div class="progress-circle " style="--percentage: {{progress}}">
+            <span>{{ progress }}%</span>
         </div>
-    {% else %}
-        <div class="progress-circle zero">
-            <span>{{ progress }}</span>
-        </div>
-    {% endif %}
 </div>
 
 <div>

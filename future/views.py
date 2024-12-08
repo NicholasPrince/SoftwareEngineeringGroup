@@ -34,7 +34,7 @@ def view_path_view(request):
 # Progress Page
 def progress_view(request):
     user = request.user.is_authenticated
-    progress = "33%" if user else "0%"
+    progress = 44 if user else 0
         # Progress page
     return render(request, 'progress.html', {"progress": progress, "user": user})
 
