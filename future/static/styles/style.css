@@ -276,11 +276,10 @@ form {
 	margin: 0 auto;
 	border: 1px solid lightgray;
 	border-radius: 8px;
-	padding: 24px;
 }
 
 .form__group {
-  margin: 15px 1rem;
+  margin: 15px 20%;
 }
 
 .form__group label{
@@ -290,7 +289,7 @@ form {
 }
 
 .form__group input{
-    width: 50%;
+    width: 100%;
     margin: 0;
     display: block;
     padding: 4px;
