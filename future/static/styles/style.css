@@ -249,8 +249,8 @@ img {
 	height: 100px;
 	border-radius: 50%;
 	background: conic-gradient(
-		#1bd863 calc(var(--percentage, 0) * 1%),/* Progress color */ 
-    #817a7a 0% /* Background color */
+		#1bd863 calc(var(--percentage, 0) * 1%),
+		/* Progress color */ #817a7a 0% /* Background color */
 	);
 	display: flex;
 	align-items: center;
@@ -270,4 +270,30 @@ p {
 
 li {
 	list-style: none;
+}
+
+form {
+	margin: 0 auto;
+	border: 1px solid lightgray;
+	border-radius: 8px;
+	padding: 24px;
+}
+
+.form__group {
+  margin: 15px 1rem;
+}
+
+.form__group label{
+  display: block;
+  margin: 0;
+  width: fit-content;
+}
+
+.form__group input{
+    width: 50%;
+    margin: 0;
+    display: block;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
 }
