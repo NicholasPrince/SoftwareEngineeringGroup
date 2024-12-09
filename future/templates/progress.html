@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}
+Progress
+{% endblock title %}
+
+{% block content %}
+<section class="hero-basic">
+    <h1 class="title-2">Progress</h1>
+    <p class="subtitle">Track your progress in Game Development.</p>
+</section>
+
+<!-- Basic Progress Overview -->
+<div>
+    <p>Overall Progress: {{ progress }}%</p>
+        <div class="progress-circle " style="--percentage: {{progress}}">
+            <span>{{ progress }}%</span>
+        </div>
+</div>
+
+<div>
+    <p>Modules:</p>
+    <ul class="cards">
+        <li class="card">
+            Prep Video - {% if user %}Completed{% else %}Not Started{% endif %}
+        </li>
+        <li class="card">
+            Resource Guide - {% if user %}In Progress{% else %}Not Started{% endif %}
+        </li>
+        <li class="card">
+            Project Assignment - Not Started
+        </li>
+    </ul>
+</div>
+{% endblock content %}
